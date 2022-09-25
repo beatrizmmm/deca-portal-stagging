@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { FormFundicaoComponent } from './form-fundicao/form-fundicao.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HomeAdminComponent } from './home-admin/home-admin.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HomeComponent,
     FormFundicaoComponent,
+    HomeAdminComponent,
 
   ],
   imports: [
