@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent, data: { title: 'home' } },
   { path: 'fundicao', component: FundicaoComponent, data: { title: 'fundicao' } },
   { path: 'form-fundicao', component: FormFundicaoComponent, data: { title: 'form-fundicao' } },
-  { path: 'home-admin', component: HomeAdminComponent, data: { title: 'form-fundicao' } }
+  { path: 'home-admin', component: HomeAdminComponent, data: { title: 'form-fundicao' } },
+  { path: '', redirectTo: `/home`, pathMatch: 'full' },
 ];
 
 @NgModule({
