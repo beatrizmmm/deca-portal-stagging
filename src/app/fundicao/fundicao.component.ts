@@ -2,14 +2,14 @@ import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home-admin',
-  templateUrl: './home-admin.component.html',
-  styleUrls: ['./home-admin.component.scss']
+  selector: 'app-fundicao',
+  templateUrl: './fundicao.component.html',
+  styleUrls: ['./fundicao.component.scss']
 })
-export class HomeAdminComponent implements OnInit {
+export class FundicaoComponent implements OnInit {
 
   constructor(
-    private router:Router
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -18,4 +18,5 @@ export class HomeAdminComponent implements OnInit {
   goToPage(nomePagina: string) {
     this.router.navigate([`${nomePagina}`]);
   }
+
 }

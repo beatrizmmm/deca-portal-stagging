@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -10,10 +11,14 @@ export class FormFundicaoComponent implements OnInit {
   // contagemEstoque: FormGroup
 
   constructor(
-    // private fb: FormBuilder
+    private router: Router
   ) { }
 
   ngOnInit(): void {
+  }
+
+  goToPage(nomePagina: string) {
+    this.router.navigate([`${nomePagina}`]);
   }
 
   // contagemEstoques() {

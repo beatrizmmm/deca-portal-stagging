@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { FormFundicaoComponent } from './form-fundicao/form-fundicao.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeAdminComponent } from './home-admin/home-admin.component';
+import { FundicaoComponent } from './fundicao/fundicao.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HomeAdminComponent } from './home-admin/home-admin.component';
     HomeComponent,
     FormFundicaoComponent,
     HomeAdminComponent,
+    FundicaoComponent,
 
   ],
   imports: [

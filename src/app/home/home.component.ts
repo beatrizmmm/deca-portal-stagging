@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { RouteNames } from '../app-contants';
 
 @Component({
@@ -10,9 +11,15 @@ export class HomeComponent implements OnInit {
 
   routeNames = RouteNames
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  goToPage(nomePagina: string) {
+    this.router.navigate([`${nomePagina}`]);
   }
 
 }
