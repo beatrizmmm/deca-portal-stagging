@@ -1,0 +1,31 @@
+<div class="m-height d-flex flex-column justify-content-center align-items-center mt-5 mb-4">
+  <div class="py-5 text-center">
+    <a type="button" (click)="goToPage('home')"><img class="d-block mx-auto mb-4 dexco" src="assets/logo_dexco.png"
+      alt="" width="72" height="57"></a>
+  </div>
+</div>
+<div class="container py-3 display">
+  <div class="col-12 table-striped">
+    <h4>Gestão de apontamento</h4>
+    <p>Programação da produção</p>
+  </div>
+<table class="table table-striped">
+  <thead>
+  <tr class="t-haed">
+    <th scope="col-3">SKU</th>
+    <th scope="col-3">Capacidade de Produção</th>
+    <th scope="col-3">Ineficiência de Produção</th>
+    <th scope="col-3">Tempo de Estoque</th>
+  </tr>
+  </thead>
+  <div>&nbsp;</div>
+  <tbody>
+  <tr *ngFor="let country of countries; index as i">
+    <th scope="row" class="gray b-radius-10 mb-3">{{ country }}</th>
+    <td><input type="text" class="gray-light b-radius-6" placeholder="Quantidade de peças"></td>
+    <td><input type="text" class="gray-light b-radius-6" placeholder="% de refugo admissível"></td>
+    <td><input type="text" class="gray-light b-radius-6" placeholder="horas"></td>
+  </tr>
+  </tbody>
+</table>
+</div>

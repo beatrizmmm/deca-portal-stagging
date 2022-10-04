@@ -8,6 +8,7 @@ import { FormFundicaoComponent } from './form-fundicao/form-fundicao.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { FundicaoComponent } from './fundicao/fundicao.component';
+import { GerirFundicaoComponent } from './gerir-fundicao/gerir-fundicao.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FundicaoComponent } from './fundicao/fundicao.component';
     FormFundicaoComponent,
     HomeAdminComponent,
     FundicaoComponent,
+    GerirFundicaoComponent,
 
   ],
   imports: [

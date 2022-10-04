@@ -3,7 +3,40 @@
     <a type="button" (click)="goToPage('home')"><img class="d-block mx-auto mb-4 dexco" src="assets/logo_dexco.png" alt="" width="72" height="57"></a>
 
   </div>
-  <div class="row row-cols-1 row-cols-md-3 mb-3 ">
+  <p>Gestão de apontamento</p>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">SKU</th>
+    <th scope="col">MI</th>
+    <th scope="col">Produção Líquida</th>
+    <th scope="col">Estoque Previsto</th>
+    <th scope="col">Inventário</th>
+    <th scope="col">Status do Estoque</th>
+    <th scope="col">Saída Prevista</th>
+    <th scope="col">Delta saída</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let country of countries; index as i">
+    <th scope="row">{{ country }}</th>
+
+
+    <td> {{ country.name }} </td>
+    <td>{{ country.area | number }}</td>
+    <td>{{ country.population | number }}</td>
+    <td>{{ country.population | number }}</td>
+    <td>{{ country.population | number }}</td>
+    <td>{{ country.population | number }}</td>
+    <td>{{ country.population | number }}</td>
+  </tr>
+  </tbody>
+</table>
+<button class="btn btn-primary btn-lg mt-5" type="submit" (click)="goToPage('gerir-fundicao')">Gerir fundição</button>
+
+  <!-- <div class="row row-cols-1 row-cols-md-3 mb-3 ">
     <div class="col-3">
       <div class="card mb-4 rounded-3 shadow-sm">
         <div class="card-header py-3 text-center">
@@ -333,4 +366,6 @@
         </div>
       </div>
     </div>
+     -->
+
   </div>

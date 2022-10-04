@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeAdminComponent implements OnInit {
 
+  countries: any = [
+    "P210", "P21", "P760", "P76"
+  ]
   constructor(
     private router:Router
   ) { }

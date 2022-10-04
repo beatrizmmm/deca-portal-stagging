@@ -1,3 +1,4 @@
+import { GerirFundicaoComponent } from './gerir-fundicao/gerir-fundicao.component';
 import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { FundicaoComponent } from './fundicao/fundicao.component';
 import { FormFundicaoComponent } from './form-fundicao/form-fundicao.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'fundicao', component: FundicaoComponent, data: { title: 'fundicao' } },
   { path: 'form-fundicao', component: FormFundicaoComponent, data: { title: 'form-fundicao' } },
   { path: 'home-admin', component: HomeAdminComponent, data: { title: 'form-fundicao' } },
+  { path: 'gerir-fundicao', component: GerirFundicaoComponent, data: { title: 'gerir-fundicao' } },
   { path: '', redirectTo: `/home`, pathMatch: 'full' },
 ];
 

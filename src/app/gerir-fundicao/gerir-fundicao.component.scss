@@ -1,0 +1,36 @@
+.dexco {
+  width: 400px;
+}
+
+.display {
+  display: grid;
+  justify-items: center;
+}
+
+.table-striped {
+  max-width: 1100px;
+}
+
+thead {
+  text-align-last:center;
+  border-bottom: 1px solid;
+}
+tbody {
+  text-align-last: center;
+}
+
+.gray {
+  background-color: #cfcfcf;
+}
+
+.gray {
+  background-color: #e3e1e1;
+}
+
+.b-radius-10 {
+ border-radius: 10px;
+}
+
+.b-radius-6 {
+  border-radius: 6px;
+ }
