@@ -21,10 +21,10 @@
   <div>&nbsp;</div>
   <tbody>
   <tr *ngFor="let country of countries; index as i">
-    <th scope="row" class="gray b-radius-10 mb-3">{{ country }}</th>
-    <td><input type="text" class="gray-light b-radius-6" placeholder="Quantidade de peças"></td>
-    <td><input type="text" class="gray-light b-radius-6" placeholder="% de refugo admissível"></td>
-    <td><input type="text" class="gray-light b-radius-6" placeholder="horas"></td>
+    <th scope="row" class="form-control">{{ country }}</th>
+    <td class="p-0"><input type="text" class="gray-light b-radius-6 w-100 input" placeholder="Quantidade de peças"></td>
+    <td class="p-0"><input type="text" class="gray-light b-radius-6 w-100 input" placeholder="% de refugo admissível"></td>
+    <td class="p-0"><input type="text" class="gray-light b-radius-6 w-100 input" placeholder="horas"></td>
   </tr>
   </tbody>
 </table>
